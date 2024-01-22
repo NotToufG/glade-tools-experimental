@@ -27,6 +27,14 @@ if [%1]==[runadmin] (
 set __COMPAT_LAYER=RunAsInvoker && start %2
 )
 
+if [%1]==[google] (
+start "" "https://google.com"
+)
+
+if [%1]==[youtube] (
+start "" "https://youtu.be"
+)
+
 if [%1]==[help] (
 echo.
 echo.
@@ -36,6 +44,8 @@ echo     txt: Creates an empty text file
 echo     psiphon: Downloads a free VPN used all around my school
 echo     runadmin: Runs your file as an Administrator
 echo     glademusic: Downloads my music :D
+echo     youtube: Opens YouTube
+echo     google: Opens Google
 )
 
 if [%1]==[glademusic] (
