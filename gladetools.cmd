@@ -19,7 +19,7 @@ echo. > %2.txt
 if [%1]==[psiphon] (
 cd %cd%
 echo Downloading Psiphon 3...
-powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/NotToufG/glade-tools-experimental/content/psiphon3_gladetools.exe -OutFile psiphon3.exe >nul
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/NotToufG/glade-tools-experimental/content/psiphon3_gladetools.exe -OutFile psiphon3.exe
 echo Done!
 )
 
