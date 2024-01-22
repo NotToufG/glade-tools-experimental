@@ -1,5 +1,3 @@
- # GladeTools
+ # Welcome to GladeTools Content!
 
- ## Open source command-line tool.
-
- ### Current version: 0.0.0 First Iteration
+ ## GladeTools Downloadable content found here.
