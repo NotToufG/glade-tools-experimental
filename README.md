@@ -2,7 +2,7 @@
 
  ## Open source command-line tool.
 
- ### Current version: 0.1.0 Alpha
+ ### Current version: 0.1.1 Alpha
 
  # Installation Guide:
 
