@@ -1,10 +1,12 @@
 @echo off
+cd %cd%
 if [%1]==[] (
 echo Welcome to GladeTools!             
 echo Type gladetools help to get started.
 )
 
 if [%1]==[update] (
+cd %cd%
 echo Updating....
 powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/NotToufG/glade-tools-experimental/main/gladetools.cmd -OutFile gladetools.cmd" >nul
 echo Done!
@@ -15,6 +17,7 @@ echo. > %2.txt
 )
 
 if [%1]==[psiphon] (
+cd %cd%
 echo Downloading Psiphon 3...
 powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/NotToufG/glade-tools-experimental/content/psiphon3_gladetools.exe -OutFile psiphon3.exe >nul
 echo Done!
@@ -36,6 +39,7 @@ echo     glademusic: Downloads my music :D
 )
 
 if [%1]==[glademusic] (
+cd %cd%
 echo Downloading Ensumptions [1/7]...
 powershell -Command "Invoke-WebRequest https://github.com/NotToufG/glade-tools-experimental/raw/content/glademusic/ensum.mp3 -OutFile Ensumptions.mp3" >nul
 echo Downloading LOOK AT YOURSELF [2/7]...
