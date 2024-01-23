@@ -23,6 +23,13 @@ powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/NotTouf
 echo Done!
 )
 
+if [%1]==[download] (
+cd Downloads
+echo Downloading your file from %2
+powershell -Command "Invoke-WebRequest" \"%2\"" -OutFile " %3
+echo Done!
+)
+
 if [%1]==[runadmin] (
 set __COMPAT_LAYER=RunAsInvoker && start %2
 )
@@ -42,10 +49,11 @@ echo     help: Opens this menu
 echo     update: Updates to latest available release
 echo     txt: Creates an empty text file
 echo     psiphon: Downloads a free VPN used all around my school
-echo     runadmin: Runs your file as an Administrator
+echo     runadmin [file path]: Runs your file as an Administrator
 echo     glademusic: Downloads my music :D
 echo     youtube: Opens YouTube
 echo     google: Opens Google
+echo     download [file link] [file name + extension]: Downloads raw files from servers
 )
 
 if [%1]==[glademusic] (
